@@ -8,14 +8,11 @@ I found a bug in the UITableView under iOS7. This little piece of code will prod
 
 If you go back before the cells are reloaded, everything is still fine. If you run the steps under iOS6, everything is still fine. If you take a deeper look in instruments for the second table, you see something like this:
 
->
-  0	Malloc	+1	1	00:08.857.342	AppleBugTest	-[ViewController viewDidLoad]
 
-  1	Retain	+1	2	00:08.857.753	AppleBugTest	-[ViewController setTableView:]
-
-  2	Release	-1	1	00:08.857.754	AppleBugTest	-[ViewController viewDidLoad]
-
-  3	Retain	+1	2	00:08.857.756	AppleBugTest	-[ViewController viewDidLoad]
+0	Malloc	+1	1	00:08.857.342	AppleBugTest	-[ViewController viewDidLoad]
+1	Retain	+1	2	00:08.857.753	AppleBugTest	-[ViewController setTableView:]
+2	Release	-1	1	00:08.857.754	AppleBugTest	-[ViewController viewDidLoad]
+3	Retain	+1	2	00:08.857.756	AppleBugTest	-[ViewController viewDidLoad]
 
   4	Release	-1	1	00:08.857.818	AppleBugTest	-[ViewController viewDidLoad]
 
