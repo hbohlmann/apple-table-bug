@@ -13,7 +13,6 @@
 		276E0D4B18048D1A00C38F33 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 276E0D4918048D1A00C38F33 /* InfoPlist.strings */; };
 		276E0D4D18048D1A00C38F33 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 276E0D4C18048D1A00C38F33 /* main.m */; };
 		276E0D5118048D1A00C38F33 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 276E0D5018048D1A00C38F33 /* AppDelegate.m */; };
-		276E0D5418048D1A00C38F33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 276E0D5218048D1A00C38F33 /* Main.storyboard */; };
 		276E0D5718048D1A00C38F33 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 276E0D5618048D1A00C38F33 /* ViewController.m */; };
 		276E0D5918048D1A00C38F33 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 276E0D5818048D1A00C38F33 /* Images.xcassets */; };
 		276E0D6018048D1A00C38F33 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 276E0D5F18048D1A00C38F33 /* XCTest.framework */; };
@@ -21,6 +20,7 @@
 		276E0D6218048D1A00C38F33 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 276E0D4418048D1A00C38F33 /* UIKit.framework */; };
 		276E0D6A18048D1A00C38F33 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 276E0D6818048D1A00C38F33 /* InfoPlist.strings */; };
 		276E0D6C18048D1A00C38F33 /* AppleBugTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 276E0D6B18048D1A00C38F33 /* AppleBugTestTests.m */; };
+		276E0D761804900900C38F33 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 276E0D751804900900C38F33 /* Storyboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +44,6 @@
 		276E0D4E18048D1A00C38F33 /* AppleBugTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppleBugTest-Prefix.pch"; sourceTree = "<group>"; };
 		276E0D4F18048D1A00C38F33 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		276E0D5018048D1A00C38F33 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		276E0D5318048D1A00C38F33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		276E0D5518048D1A00C38F33 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		276E0D5618048D1A00C38F33 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		276E0D5818048D1A00C38F33 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -53,6 +52,7 @@
 		276E0D6718048D1A00C38F33 /* AppleBugTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AppleBugTestTests-Info.plist"; sourceTree = "<group>"; };
 		276E0D6918048D1A00C38F33 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		276E0D6B18048D1A00C38F33 /* AppleBugTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppleBugTestTests.m; sourceTree = "<group>"; };
+		276E0D751804900900C38F33 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Storyboard.storyboard; path = ../Storyboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,9 +112,9 @@
 		276E0D4618048D1A00C38F33 /* AppleBugTest */ = {
 			isa = PBXGroup;
 			children = (
+				276E0D751804900900C38F33 /* Storyboard.storyboard */,
 				276E0D4F18048D1A00C38F33 /* AppDelegate.h */,
 				276E0D5018048D1A00C38F33 /* AppDelegate.m */,
-				276E0D5218048D1A00C38F33 /* Main.storyboard */,
 				276E0D5518048D1A00C38F33 /* ViewController.h */,
 				276E0D5618048D1A00C38F33 /* ViewController.m */,
 				276E0D5818048D1A00C38F33 /* Images.xcassets */,
@@ -199,6 +199,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Holger Bohlmann";
 				TargetAttributes = {
+					276E0D3C18048D1A00C38F33 = {
+						DevelopmentTeam = UDWCB532ZV;
+					};
 					276E0D5D18048D1A00C38F33 = {
 						TestTargetID = 276E0D3C18048D1A00C38F33;
 					};
@@ -230,7 +233,7 @@
 			files = (
 				276E0D5918048D1A00C38F33 /* Images.xcassets in Resources */,
 				276E0D4B18048D1A00C38F33 /* InfoPlist.strings in Resources */,
-				276E0D5418048D1A00C38F33 /* Main.storyboard in Resources */,
+				276E0D761804900900C38F33 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,14 +285,6 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		276E0D5218048D1A00C38F33 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				276E0D5318048D1A00C38F33 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		276E0D6818048D1A00C38F33 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -335,8 +330,9 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos7.0;
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -368,8 +364,9 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				SDKROOT = iphoneos;
+				SDKROOT = iphoneos7.0;
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Release;
 		};
@@ -378,9 +375,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AppleBugTest/AppleBugTest-Prefix.pch";
 				INFOPLIST_FILE = "AppleBugTest/AppleBugTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -391,9 +390,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AppleBugTest/AppleBugTest-Prefix.pch";
 				INFOPLIST_FILE = "AppleBugTest/AppleBugTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -460,6 +461,7 @@
 				276E0D7118048D1A00C38F33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		276E0D7218048D1A00C38F33 /* Build configuration list for PBXNativeTarget "AppleBugTestTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +470,7 @@
 				276E0D7418048D1A00C38F33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,12 +7,15 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    UINavigationController *nav = (UINavigationController*)self.window.rootViewController;
+    [nav pushViewController:[[ViewController alloc] init] animated:NO];
+    
     return YES;
 }
 							
