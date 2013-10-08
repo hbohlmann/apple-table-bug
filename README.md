@@ -10,12 +10,19 @@ If you go back before the cells are reloaded, everything is still fine. If you r
 
 >
   0	Malloc	+1	1	00:08.857.342	AppleBugTest	-[ViewController viewDidLoad]
+
   1	Retain	+1	2	00:08.857.753	AppleBugTest	-[ViewController setTableView:]
+
   2	Release	-1	1	00:08.857.754	AppleBugTest	-[ViewController viewDidLoad]
+
   3	Retain	+1	2	00:08.857.756	AppleBugTest	-[ViewController viewDidLoad]
+
   4	Release	-1	1	00:08.857.818	AppleBugTest	-[ViewController viewDidLoad]
+
   5	Retain	+1	2	00:08.857.820	AppleBugTest	-[ViewController viewDidLoad]
+
   6	Release	-1	1	00:08.858.046	AppleBugTest	-[ViewController viewDidLoad]
+
   7	Retain	+1	2	00:08.858.229	AppleBugTest	-[ViewController viewDidLoad]
   8	Retain	+1	3	00:08.858.271	UIKit	-[UIView(Internal) _addSubview:positioned:relativeTo:]
   9	Release	-1	2	00:08.858.314	AppleBugTest	-[ViewController viewDidLoad]
